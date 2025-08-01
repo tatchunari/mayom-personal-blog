@@ -1,12 +1,39 @@
-# React + Vite
+# 🌿 Mayom's Personal Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal blog – a cozy corner of the web where I share more about myself, my interests, and my journey. This project is part of my portfolio and is designed to reflect both my personality and frontend development skills.
 
-Currently, two official plugins are available:
+> Live site: [mayom-personal-blog.vercel.app](https://mayom-personal-blog.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📝 About This Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This blog is a self-developed personal website created to introduce myself in a more personal and creative way. It features:
+
+- A short bio and background
+- Highlights of my interests (like games, art, and matcha!)
+- A timeline of my past work experiences
+- A clean, responsive layout for both desktop and mobile
+
+The project also serves as a portfolio piece and is included in my resume to showcase my frontend skills and design sensibilities.
+
+---
+
+## ⚙️ Tech Stack
+
+- **React 19**
+- **Vite**
+- **Tailwind CSS**
+- **ShadCN/UI** (for accessible components)
+- **Deployed on Vercel**
+- **lucide-react**
+---
+
+## 💡 Key Features
+
+- Responsive design
+- Clean, minimalist UI with a playful personal touch
+- Custom sections tailored to reflect my personal and professional journey
+- Organized code structure for scalability and maintenance
+
+---
