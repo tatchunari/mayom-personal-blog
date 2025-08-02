@@ -6,12 +6,12 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl gap-12">
         {/* Left: Headline and description */}
         <div className="flex flex-col items-center md:items-start md:text-left max-w-md">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-right">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight md:text-right">
             DayDreamer, <br className="md:hidden" />
             Matcha Lover,<br />
             Capybara Energy
           </h1>
-          <p className="text-gray-500 mb-6 text-base md:text-xl text-right">
+          <p className="text-gray-500 mb-6 text-base md:text-xl md:text-right">
             Design-minded developer. Chill like a capybara, powered by milk tea and matcha.
           </p>
         </div>
@@ -21,7 +21,7 @@ const HeroSection = () => {
           <img
             src="food.jpeg"
             alt="food"
-            className="rounded-xl object-cover w-64 h-80 shadow-lg"
+            className="rounded-xl object-cover w-64 h-80 shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2"
           />
         </div>
 

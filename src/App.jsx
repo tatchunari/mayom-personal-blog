@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
+    <div>
       <Navbar/>
       <HeroSection/>
+    </div>
     </>
   )
 }

@@ -6,14 +6,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-xl font-semibold text-gray-700">Orathai.Blog</div>
+          <div className="md:text-xl text-base font-semibold text-gray-700">Orathai.Blog</div>
 
           {/* Buttons */}
-          <div className="flex space-x-3">
+          <div className="hidden md:flex space-x-3">
             <button className="px-10 py-2 rounded-full border border-black text-black hover:bg-gray-100 transition">
               Log in
             </button>
-            <button className="px-10 py-2 rounded-full bg-black text-white hover:bg-gray-800 transition">
+            <button className="px-10 py-2 rounded-full bg-[#26231E] text-white hover:bg-[#43403B] transition">
               Sign up
             </button>
           </div>
