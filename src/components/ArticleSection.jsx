@@ -1,5 +1,7 @@
 import ArticleNavbarMobile from "./ArticleNavbarMobile";
 import ArticleNavbarDesktop from "./ArticleNavbarDesktop";
+import BlogCard from "./BlogCard";
+import { blogPosts } from "@/data/blogPost";
 
 const ArticleSection = () => {
   return (
@@ -14,6 +16,24 @@ const ArticleSection = () => {
         <div className="hidden md:block">
           <ArticleNavbarDesktop />
         </div>
+      </div>
+
+      {/* Blog/Article Cards Section */}
+      <div className="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {
+         blogPosts.map((post) => 
+          <BlogCard 
+            key={post.id}
+            image={post.image}
+            category={post.category}
+            title={post.title}
+            description={post.description}
+            author={post.author}
+            date={post.date} 
+          />
+
+        ) 
+        }
       </div>
     </section>
   );
