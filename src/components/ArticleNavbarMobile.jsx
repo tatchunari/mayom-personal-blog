@@ -4,7 +4,12 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 
 const ArticleNavbarMobile = () => {
 
-  const categories = ["Highlight", "Cat", "Inspiration", "General"];
+  const categories = [
+  { value: "highlight", label: "Highlight" },
+  { value: "dev", label: "Dev" },
+  { value: "hobbies", label: "Hobbies" },
+  { value: "art", label: "Art" },
+  ];
   
   return (
     <div className="bg-[#efeeeb] px-4 py-6 md:hidden">
@@ -22,11 +27,16 @@ const ArticleNavbarMobile = () => {
           <SelectValue placeholder="Highlight" />
         </SelectTrigger>
         <SelectContent className="bg-white border border-[#d6d3cb] text-[#75716B]">
-          <SelectItem value="highlight" className="hover:bg-gray-100 cursor-pointer">Highlight</SelectItem>
-          <SelectItem value="dev" className="hover:bg-gray-100 cursor-pointer">Dev</SelectItem>
-          <SelectItem value="hobbies" className="hover:bg-gray-100 cursor-pointer">Hobbies</SelectItem>
-          <SelectItem value="art" className="hover:bg-gray-100 cursor-pointer">Art</SelectItem>
-        </SelectContent>
+        {categories.map((cat) => (
+          <SelectItem
+            key={cat.value}
+            value={cat.value}
+            className="hover:bg-gray-100 cursor-pointer"
+          >
+            {cat.label}
+          </SelectItem>
+        ))}
+      </SelectContent>
       </Select>
     </div>
   );
