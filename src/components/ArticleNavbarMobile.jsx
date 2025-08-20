@@ -1,5 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { useState } from "react";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
 const ArticleNavbarMobile = () => {
@@ -10,6 +11,8 @@ const ArticleNavbarMobile = () => {
   { value: "hobbies", label: "Hobbies" },
   { value: "art", label: "Art" },
   ];
+
+  const [selectedCategory, setSelectedCategory] = useState("highlight");
   
   return (
     <div className="bg-[#efeeeb] px-4 py-6 md:hidden">
@@ -21,8 +24,10 @@ const ArticleNavbarMobile = () => {
         />
         <Search className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 text-[#75716B] pointer-events-none" />
       </form>
+
+      {/* Category Dropdown */}
       <div className="mb-2 text-[#75716B] text-lg">Category</div>
-      <Select>
+      <Select value={selectedCategory} onValueChange={setSelectedCategory}>
         <SelectTrigger className="w-full h-14 border border-[#d6d3cb] bg-white text-[#75716B] px-4">
           <SelectValue placeholder="Highlight" />
         </SelectTrigger>
