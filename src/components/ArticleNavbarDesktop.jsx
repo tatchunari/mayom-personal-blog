@@ -3,11 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 
 const ArticleNavbarDesktop = () => {
+
+  const categories = ["Highlight", "Cat", "Inspiration", "General"];
+
   return (
     <div className="hidden md:flex bg-[#efeeeb] rounded-xl p-4 items-center justify-between">
       {/* Category buttons */}
       <nav className="flex gap-4 flex-wrap">
-        {["Highlight", "Dev", "Hobbies", "Art"].map((label) => (
+        {categories.map((label) => (
           <Button
             key={label}
             variant="ghost"

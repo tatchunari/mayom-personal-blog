@@ -3,6 +3,9 @@ import { Search } from "lucide-react";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
 const ArticleNavbarMobile = () => {
+
+  const categories = ["Highlight", "Cat", "Inspiration", "General"];
+  
   return (
     <div className="bg-[#efeeeb] px-4 py-6 md:hidden">
       <form className="mb-6 relative">
@@ -18,11 +21,11 @@ const ArticleNavbarMobile = () => {
         <SelectTrigger className="w-full h-14 border border-[#d6d3cb] bg-white text-[#75716B] px-4">
           <SelectValue placeholder="Highlight" />
         </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="highlight">Highlight</SelectItem>
-          <SelectItem value="dev">Dev</SelectItem>
-          <SelectItem value="hobbies">Hobbies</SelectItem>
-          <SelectItem value="art">Art</SelectItem>
+        <SelectContent className="bg-white border border-[#d6d3cb] text-[#75716B]">
+          <SelectItem value="highlight" className="hover:bg-gray-100 cursor-pointer">Highlight</SelectItem>
+          <SelectItem value="dev" className="hover:bg-gray-100 cursor-pointer">Dev</SelectItem>
+          <SelectItem value="hobbies" className="hover:bg-gray-100 cursor-pointer">Hobbies</SelectItem>
+          <SelectItem value="art" className="hover:bg-gray-100 cursor-pointer">Art</SelectItem>
         </SelectContent>
       </Select>
     </div>
