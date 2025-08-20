@@ -1,4 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Button } from "@/components/ui/button";
+import { RxHamburgerMenu } from "react-icons/rx";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 
 const Navbar = () => {
   return (
@@ -7,6 +17,23 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="md:text-xl text-base font-semibold text-gray-700">Orathai.Blog</div>
+
+          {/* Mobile Drop Down Menu */}
+          <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline"><RxHamburgerMenu /></Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56 bg-white border border-[#d6d3cb] text-[#75716B]" align="start">
+            <DropdownMenuGroup>
+              <DropdownMenuItem className="hover:bg-gray-100 cursor-pointer">
+                Log in
+              </DropdownMenuItem>
+              <DropdownMenuItem className="hover:bg-gray-100 cursor-pointer">
+                Sign up
+              </DropdownMenuItem>
+              </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
           {/* Buttons */}
           <div className="hidden md:flex space-x-3">
