@@ -20,7 +20,7 @@ const Navbar = () => {
 
           {/* Mobile Drop Down Menu */}
           <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger asChild className="md:hidden">
             <Button variant="outline"><RxHamburgerMenu /></Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56 bg-white border border-[#d6d3cb] text-[#75716B]" align="start">
